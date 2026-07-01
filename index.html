@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SpeakEasy — Onboarding</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ===================== SIGN UP ===================== -->
+<section id="step-signup" class="step">
+  <div class="signup-shell">
+    <div class="signup-left">
+      <a class="logo" href="#"><span class="dot"></span><span class="wordmark">Speak<span class="easy">Easy</span></span></a>
+      <div>
+        <h1>Speak English<br/>with confidence.</h1>
+        <p class="subtext" style="margin-top:16px;font-size:17px;">Speak with real trainers and practice with AI in a calm, private space.</p>
+      </div>
+      <div class="benefits">
+        <div class="benefit"><span class="icon"></span><div><strong>Private conversations</strong><span>Practice without pressure.</span></div></div>
+        <div class="benefit"><span class="icon"></span><div><strong>Human coaching</strong><span>Work with real trainers.</span></div></div>
+        <div class="benefit"><span class="icon"></span><div><strong>Progress that sticks</strong><span>Real improvement over time.</span></div></div>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"I feel calmer speaking English now."</p>
+        <div class="who">— Priya, Product Manager</div>
+      </div>
+      <div class="privacy-note"><strong>Your sessions stay private.</strong><span>Nothing is shared without your permission.</span></div>
+    </div>
+    <div class="signup-right">
+      <form class="signup-form" id="signup-form">
+        <h1 style="font-size:44px;">Create your account</h1>
+        <p class="subtext" style="margin:10px 0 30px;">Start your journey to confident English.</p>
+        <div class="form-group">
+          <label for="su-name">Full name</label>
+          <input id="su-name" required placeholder="Marco Rossi" />
+        </div>
+        <div class="form-group">
+          <label for="su-email">Email</label>
+          <input id="su-email" type="email" required placeholder="you@example.com" />
+        </div>
+        <div class="form-group">
+          <label for="su-password">Password</label>
+          <input id="su-password" type="password" required placeholder="••••••••" />
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;margin-top:10px;">Create new account</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ONBOARDING WIZARD ===================== -->
+<section id="step-onboarding" class="step page" style="display:none;">
+  <div class="topbar">
+    <a class="logo" href="#"><span class="dot"></span><span class="wordmark">speak<span class="easy">easy</span></span></a>
+    <a class="save-exit" href="#">Save &amp; exit</a>
+  </div>
+  <div class="progress" id="progress"></div>
+  <div class="content-row">
+    <div class="card" id="card-content"></div>
+    <div class="panel" id="panel"></div>
+  </div>
+</section>
+
+<!-- ===================== CONFIRMATION ===================== -->
+<section id="step-confirm" class="step page" style="display:none;">
+  <div class="topbar">
+    <a class="logo" href="#"><span class="dot"></span><span class="wordmark">speak<span class="easy">easy</span></span></a>
+    <a class="save-exit" href="#">Save &amp; exit</a>
+  </div>
+  <div class="confirm-card">
+    <div class="check-circle">✓</div>
+    <h1>You're all set.</h1>
+    <p class="subtext" id="confirm-subtext"></p>
+    <div class="next-steps">
+      <div class="step"><span class="num">1</span><p>A relaxed intro call. <span id="confirm-trainer-1">Your trainer</span> listens to how you speak — no test — and gets to know you.</p></div>
+      <div class="step"><span class="num">2</span><p>Your first plan, built around what you told us today.</p></div>
+      <div class="step"><span class="num">3</span><p>Your first session, and you're into the weekly rhythm.</p></div>
+    </div>
+    <div class="payment-note">No payment today. Once you've met your trainer and you're happy, you choose a plan. Not before.</div>
+    <a class="btn btn-primary" href="dashboard.html">Go to Speakeasy →</a>
+  </div>
+</section>
+
+<script src="onboarding.js"></script>
+</body>
+</html>

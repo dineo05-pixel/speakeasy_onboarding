@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Your Speakeasy</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="dash-shell">
+  <div class="sidebar">
+    <a class="logo" href="index.html"><span class="dot"></span><span class="wordmark">Speak<span class="easy">Easy</span></span></a>
+    <div class="nav-list">
+      <a class="nav-item active" href="#"><span class="dot"></span>Your Speakeasy</a>
+      <a class="nav-item" href="#"><span class="dot"></span>Training Ground</a>
+      <a class="nav-item" href="#"><span class="dot"></span>Sessions</a>
+      <a class="nav-item" href="#"><span class="dot"></span>Materials</a>
+      <a class="nav-item" href="#"><span class="dot"></span>Settings</a>
+    </div>
+    <div class="sidebar-spacer"></div>
+    <div class="trainer-mini">
+      <div class="row">
+        <div class="avatar-sm"></div>
+        <div>
+          <div class="label">YOUR TRAINER</div>
+          <strong id="dash-trainer-name">Elena</strong>
+        </div>
+      </div>
+      <a href="#">Message trainer →</a>
+    </div>
+  </div>
+
+  <div class="dash-main">
+    <div class="dash-header">
+      <div>
+        <h1 id="dash-welcome">Welcome back</h1>
+        <p class="subtext">Here's what's next on your path to confident English.</p>
+      </div>
+      <span class="pill">INTRO CALL · PENDING</span>
+    </div>
+
+    <div class="dash-card">
+      <div>
+        <h2>Your Fluency Fingerprint</h2>
+        <p class="caption" id="dash-fp-caption">Seeded from your intro call, updated as you practice.</p>
+      </div>
+      <div class="fp-row" id="dash-fp-row"></div>
+    </div>
+
+    <div class="dash-card">
+      <div>
+        <h2>Your first few weeks</h2>
+        <p class="caption" id="dash-roadmap-caption">Built around your focus areas.</p>
+      </div>
+      <div class="timeline">
+        <div class="tl-step">
+          <div class="tl-marker-row"><div class="tl-marker done">1</div><div class="tl-line"></div></div>
+          <strong>Intro call</strong><span>Level diagnosed, fingerprint seeded.</span>
+        </div>
+        <div class="tl-step">
+          <div class="tl-marker-row"><div class="tl-marker current">2</div><div class="tl-line"></div></div>
+          <strong>First session</strong><span id="dash-step2">Your trainer builds a lesson from your goals.</span>
+        </div>
+        <div class="tl-step">
+          <div class="tl-marker-row"><div class="tl-marker">3</div><div class="tl-line"></div></div>
+          <strong>Weeks 2–3</strong><span>Steady practice — speaking + Training Ground.</span>
+        </div>
+        <div class="tl-step">
+          <div class="tl-marker-row"><div class="tl-marker">4</div></div>
+          <strong>First check-in</strong><span>A look at what's clicking, what needs reps.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="two-card-row">
+      <div class="dash-card">
+        <div>
+          <h2>Your answers</h2>
+          <p class="caption">Confirmed at sign-up — nothing you told us was wasted.</p>
+        </div>
+        <div id="dash-answers"></div>
+      </div>
+      <div class="dash-card">
+        <div>
+          <h2 id="dash-meet-trainer">Meet your trainer</h2>
+          <p class="caption" id="dash-trainer-tag"></p>
+        </div>
+        <p class="subtext" id="dash-trainer-bio"></p>
+        <div class="why-matched">
+          <span class="k">WHY YOU WERE MATCHED</span>
+          <span class="v" id="dash-why-matched"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="dash-card">
+      <div>
+        <h2>Materials store</h2>
+        <p class="caption">Practice packs and notes from your sessions.</p>
+      </div>
+      <div class="materials-row" id="dash-materials"></div>
+    </div>
+
+    <div class="dash-card">
+      <div>
+        <h2>Session records</h2>
+        <p class="caption">Every call, kept — feeds your Fluency Fingerprint.</p>
+      </div>
+      <div class="sessions-list" id="dash-sessions"></div>
+    </div>
+  </div>
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>
