@@ -191,7 +191,7 @@ function renderStep() {
       <div class="card-header">
         <div class="free-badge">✓ Free · no card needed today</div>
         <h1>Book your intro call.</h1>
-        <p class="subtext">Think of it as a no-risk trial. Pick a time that works for you on the calendar below — no test, just a relaxed conversation so ${state.trainer.name} can hear how you speak. You only choose a plan afterwards, if you're happy.</p>
+        <p class="subtext">Think of it as a no-risk trial. Pick a 30-minute slot that works for you on the calendar below — no test, just a relaxed conversation so ${state.trainer.name} can hear how you speak. You only choose a plan afterwards, if you're happy.</p>
       </div>
       <div style="display:flex;flex-direction:column;gap:14px;">
         <div class="field-label" style="margin:0;">When you're ready</div>
