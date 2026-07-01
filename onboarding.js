@@ -1,6 +1,6 @@
 // ===== Config =====
 const WEBHOOK_URL = 'https://hook.eu1.make.com/1ggo1x1pf4hmj8k3tdpvx56416u4ik6r';
-const BOOKING_URL = 'https://calendar.app.google/xR5ixaAjgD249jur5';
+const BOOKING_URL = 'https://calendly.com/dineo-oriigo/30min';
 
 // ===== Data =====
 const MOTIVATIONS = ['Work & meetings', 'Travel', 'Confidence speaking', 'Family & friends', 'Living abroad', 'Studying / exams'];
