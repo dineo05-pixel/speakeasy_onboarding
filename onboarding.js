@@ -23,14 +23,8 @@ const DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
 const DAYS_SHORT = { Monday: 'Mon', Tuesday: 'Tue', Wednesday: 'Wed', Thursday: 'Thu', Friday: 'Fri', Saturday: 'Sat', Sunday: 'Sun' };
 const TIMES = ['Morning', 'Afternoon', 'Evening'];
 
-const TRAINERS = [
-  { id: 'T1', name: 'Elena', tag: 'Native UK English', bio: 'Warm, patient and unflappable.', specialties: ['confidence'], days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], times: ['Afternoon', 'Evening'],
-    reasons: ["Brilliant with nervous speakers — just what you're after.", 'Native UK English — clear and easy to follow.'] },
-  { id: 'T2', name: 'Daniel', tag: 'Native Irish English', bio: 'Energetic and encouraging, focused on getting you talking more.', specialties: ['fluency'], days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], times: ['Morning'],
-    reasons: ['Great for building fluency and momentum.', 'Native Irish English — warm and easy to follow.'] },
-  { id: 'T3', name: 'Priya', tag: 'Indian English', bio: 'Precise and encouraging, specializes in clear pronunciation.', specialties: ['pronunciation'], days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], times: ['Evening'],
-    reasons: ['Specializes in clear, confident pronunciation.', 'Indian English — a great model for clarity.'] },
-];
+const ELENA = { id: 'T1', name: 'Elena', tag: 'Native UK English', bio: 'Warm, patient and unflappable.',
+  reasons: ["Brilliant with nervous speakers — just what you're after.", 'Native UK English — clear and easy to follow.'] };
 
 // ===== State =====
 const state = {
@@ -43,12 +37,9 @@ const state = {
 let step = 0; // 0..5 across the 6 onboarding screens
 
 // ===== Trainer matching =====
+// Elena is currently the only trainer, so every learner is matched to her.
 function matchTrainer() {
-  const hardMatch = TRAINERS.filter(t => t.times.includes(state.time) && state.days.some(d => t.days.includes(d)));
-  const pool = hardMatch.length ? hardMatch : TRAINERS;
-  const score = t => state.focus.reduce((s, f) => s + (t.specialties.includes(f) ? 1 : 0), 0);
-  pool.sort((a, b) => score(b) - score(a));
-  return pool[0];
+  return ELENA;
 }
 
 function whenSummary() {
